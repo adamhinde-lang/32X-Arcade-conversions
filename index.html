@@ -26,6 +26,16 @@
     </div>
 
     <!-- POSTS_CONTAINER -->
+<!-- START_ENTRY:20261014_235114 -->
+<div class="entry">
+    <h2>Space Gun 32X – Dev diary, 14 October</h2>
+    <p class="date">October 14, 2026</p>
+    <p>Today’s big fight was speed. Stage 1 kept dropping to about 12 frames a second, so I built a stopwatch into the game to see where each frame went. The first fix was teamwork: the 32X has two processors, and one was doing most of the drawing while the other sat waiting. Now they share the screen fairly, adjusting every frame. Next, the stopwatch showed almost all the remaining time went on painting the 3D corridor walls, one pixel at a time. Clever tricks that looked good on paper made no difference, so I went old school and wrote the innermost drawing loops by hand in the processor’s own language. The walls now draw a quarter faster and the aliens a little faster too. The busiest moments went from 12 to around 20 frames a second, and the quieter stretches run at the full 30.</p><p>Then a new idea: the Sega Saturn. It has a chip that stretches sprites by itself, exactly the job that’s been slowing the 32X down, and it plays CDs, so cartridge space stops being a worry. Everything my sprite tool knows about the arcade carries straight over, so I’ve added a switch to it to pick the 32X or the Saturn, and planned the Saturn version step by step. The 32X version comes first and won’t be touched by any of it.</p>
+    <div class="preview-grid"><a class="preview-card" href="assets/devlog_20261014_235114_1_full.png" target="_blank" title="Click to view original full size"><img src="assets/devlog_20261014_235114_1_640x480.png" alt="Screenshot 1 (640x480 preview)"></a><a class="preview-card" href="assets/devlog_20261014_235114_2_full.png" target="_blank" title="Click to view original full size"><img src="assets/devlog_20261014_235114_2_640x480.png" alt="Screenshot 2 (640x480 preview)"></a></div>
+    
+</div>
+<!-- END_ENTRY:20261014_235114 -->
+
 <!-- START_ENTRY:20261013_132553 -->
 <div class="entry">
     <h2>Space Gun 32X – Dev diary, 13 October</h2>
